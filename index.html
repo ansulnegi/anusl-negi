@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ansul | Full Stack Java Developer</title>
+  <meta name="description" content="Portfolio of Ansul - Full Stack Java Developer specializing in Java, Spring Boot, REST APIs, HTML5, and CSS3." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-code">&lt;</span>Ansul<span class="logo-slash">/</span><span class="logo-code">&gt;</span>
+        <span class="logo-badge">Java Dev</span>
+      </a>
+
+      <!-- Server Status Indicator -->
+      <div class="server-badge" id="serverBadge" title="Java Backend Server Status">
+        <span class="status-dot"></span>
+        <span class="status-text">Checking Backend...</span>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <span class="greeting-badge">👋 Welcome to my portfolio</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Ansul</span><br />
+          <span class="typed-text">Full Stack Java Developer</span>
+        </h1>
+        <p class="hero-subtitle">
+          B.Tech Computer Science student building scalable, robust backend services in 
+          <strong>Java &amp; Spring Boot</strong> coupled with clean, accessible, and responsive user interfaces using 
+          <strong>HTML5 &amp; CSS3</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          <a href="PortfolioServer.java" download="PortfolioServer.java" class="btn btn-outline" title="Download the Java Backend Source Code">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Java Source (.java)</span>
+          </a>
+        </div>
+
+        <!-- Tech Stack Highlights -->
+        <div class="hero-tags">
+          <span class="tag-label">Primary Stack:</span>
+          <span class="tech-pill">☕ Java 21</span>
+          <span class="tech-pill">🌱 Spring Boot</span>
+          <span class="tech-pill">🌐 HTML5</span>
+          <span class="tech-pill">🎨 CSS3</span>
+          <span class="tech-pill">⚡ JavaScript</span>
+          <span class="tech-pill">🗄️ MySQL</span>
+          <span class="tech-pill">🔗 REST APIs</span>
+        </div>
+      </div>
+
+      <div class="hero-card-wrapper">
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">DeveloperProfile.java</span>
+          </div>
+          <div class="terminal-body">
+            <pre><code><span class="kw">public class</span> <span class="cls">DeveloperProfile</span> {
+  <span class="kw">private final</span> String name = <span class="str">"Ansul"</span>;
+  <span class="kw">private final</span> String degree = <span class="str">"B.Tech CSE"</span>;
+  <span class="kw">private final</span> String role = <span class="str">"Full Stack Java Dev"</span>;
+  
+  <span class="kw">public</span> String[] getCoreSkills() {
+    <span class="kw">return new</span> String[] {
+      <span class="str">"Java Core & OOP"</span>,
+      <span class="str">"Spring Boot / REST"</span>,
+      <span class="str">"Semantic HTML5 & CSS3"</span>,
+      <span class="str">"RDBMS (MySQL, JDBC)"</span>,
+      <span class="str">"Data Structures & Alg"</span>
+    };
+  }
+
+  <span class="kw">public boolean</span> isReadyForInterview() {
+    <span class="kw">return true</span>; <span class="comment">// 100% committed</span>
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Driven by Clean Code &amp; Strong CS Fundamentals</h2>
+        <p class="section-desc">
+          A passionate software engineering student with an appetite for crafting efficient backend architectures and smooth user experiences.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon">🎯</div>
+          <h3>Who I Am</h3>
+          <p>
+            I am a B.Tech Computer Science student specializing in <strong>Full Stack Java Development</strong>. 
+            I focus on understanding how things work under the hood — from HTTP request life-cycles and multi-threaded Java servers to clean CSS layouts.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="card-icon">💡</div>
+          <h3>My Engineering Philosophy</h3>
+          <p>
+            Write readable, maintainable, and modular code. I prioritize SOLID design principles, clean RESTful contracts, 
+            optimized SQL queries, and responsive frontends that perform seamlessly on any screen size.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="card-icon">🚀</div>
+          <h3>What I Bring To A Team</h3>
+          <p>
+            Strong foundation in Object-Oriented Programming (OOP), Data Structures &amp; Algorithms, 
+            rapid adaptability to modern frameworks, and eagerness to contribute actively in agile development environments.
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="metrics-row">
+        <div class="metric-item">
+          <span class="metric-number">4+</span>
+          <span class="metric-label">Full Stack Projects</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number">200+</span>
+          <span class="metric-label">DSA Problems Solved</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number">100%</span>
+          <span class="metric-label">Clean Code Commitment</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number">Java 21</span>
+          <span class="metric-label">Modern Java Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Competencies</span>
+        <h2 class="section-title">Skills &amp; Technology Stack</h2>
+        <p class="section-desc">Technologies and tools I use to design, build, and deploy full-stack applications.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend Skills -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">☕</span>
+            <h3>Backend Engineering</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Java (Core &amp; OOP, Streams, Concurrency)</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Spring Boot &amp; Spring MVC</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 82%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>RESTful APIs &amp; Microservices Architecture</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JDBC / Hibernate / JPA</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 78%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend Skills -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">🎨</span>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML5 (Semantic, Accessible)</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>CSS3 (Flexbox, Grid, Responsive Design)</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript (ES6+, Fetch API, DOM)</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>UI/UX &amp; Cross-Browser Compatibility</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database & Tools -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">🛠️</span>
+            <h3>Databases &amp; Dev Tools</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MySQL &amp; PostgreSQL (Schema, Joins, Indexing)</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git &amp; GitHub Version Control</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Postman (API Testing &amp; Documentation)</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Maven Build Tool &amp; VS Code / IntelliJ</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CS Core -->
+        <div class="skill-category">
+          <div class="category-header">
+            <span class="category-icon">🧠</span>
+            <h3>CS Core Fundamentals</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Data Structures &amp; Algorithms</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Object-Oriented Programming (OOP)</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Database Management Systems (DBMS)</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 86%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Computer Networks &amp; HTTP Protocol</span>
+                <span class="skill-pct">84%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 84%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Showcase</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">Real-world applications demonstrating end-to-end full stack architecture and clean code.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="backend">Java Backend</button>
+        <button class="filter-btn" data-filter="web">HTML &amp; CSS</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1: Live Portfolio Server -->
+        <div class="project-card" data-category="fullstack backend">
+          <div class="project-header">
+            <span class="project-type">Full Stack • Java 21</span>
+            <span class="project-status">Live Running</span>
+          </div>
+          <h3 class="project-title">Custom Java Portfolio HTTP Server &amp; REST API</h3>
+          <p class="project-description">
+            A zero-dependency, multithreaded HTTP server written entirely in Java. It serves this exact portfolio (HTML/CSS/JS) and powers RESTful API endpoints for contact messaging and server health diagnostics.
+          </p>
+          <div class="project-highlights">
+            <ul>
+              <li>Built with standard <code>com.sun.net.httpserver</code> without bulky external frameworks.</li>
+              <li>Implements REST endpoints: <code>/api/status</code>, <code>/api/profile</code>, and <code>/api/contact</code>.</li>
+              <li>Handles CORS headers, MIME type mapping, and concurrent request worker pools.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span>Java 21</span>
+            <span>HttpServer</span>
+            <span>REST API</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+          </div>
+          <div class="project-footer">
+            <a href="PortfolioServer.java" class="project-link" download="PortfolioServer.java">
+              <span>View Source Code</span> &rarr;
+            </a>
+            <button class="btn btn-xs btn-outline test-api-btn" onclick="testBackendApi()">Ping API</button>
+          </div>
+        </div>
+
+        <!-- Project 2: E-Commerce REST API -->
+        <div class="project-card" data-category="fullstack backend">
+          <div class="project-header">
+            <span class="project-type">Full Stack Backend</span>
+            <span class="project-status">Featured</span>
+          </div>
+          <h3 class="project-title">Enterprise E-Commerce RESTful Web Service</h3>
+          <p class="project-description">
+            A scalable backend system for an online marketplace with complete product catalog management, shopping cart operations, order processing, and secure JWT authentication.
+          </p>
+          <div class="project-highlights">
+            <ul>
+              <li>Role-based access control (Admin &amp; Customer) with Spring Security &amp; JWT.</li>
+              <li>Relational database persistence via Hibernate JPA and MySQL with ACID transaction guarantees.</li>
+              <li>Full API documentation using Swagger / OpenAPI specification.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Spring Security</span>
+            <span>Hibernate / JPA</span>
+            <span>MySQL</span>
+          </div>
+          <div class="project-footer">
+            <span class="interview-note">💡 Key Interview Topic: JWT Auth, ACID Transactions</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Task & Workflow Management -->
+        <div class="project-card" data-category="fullstack web">
+          <div class="project-header">
+            <span class="project-type">Full Stack Web App</span>
+            <span class="project-status">Complete</span>
+          </div>
+          <h3 class="project-title">Smart Task &amp; Workflow Management Portal</h3>
+          <p class="project-description">
+            A productivity dashboard application enabling users to organize tasks, assign priority tags, monitor progress states (To-Do, In Progress, Done), and visualize productivity metrics.
+          </p>
+          <div class="project-highlights">
+            <ul>
+              <li>Responsive user interface styled with modular CSS3 (CSS Grid &amp; Flexbox).</li>
+              <li>Asynchronous task updates using JavaScript Fetch API without page reloads.</li>
+              <li>Java REST controllers with input validation and custom error exception handlers.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>MySQL</span>
+          </div>
+          <div class="project-footer">
+            <span class="interview-note">💡 Key Interview Topic: Asynchronous DOM updates, REST Design</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Student Placement Portal -->
+        <div class="project-card" data-category="backend web">
+          <div class="project-header">
+            <span class="project-type">Database &amp; Web</span>
+            <span class="project-status">College Project</span>
+          </div>
+          <h3 class="project-title">Student Academic &amp; Placement Record System</h3>
+          <p class="project-description">
+            A centralized data management system for tracking student academic records, placement eligibility criteria, and interview scheduling for campus recruitment drives.
+          </p>
+          <div class="project-highlights">
+            <ul>
+              <li>Dynamic filtering of student eligibility based on CGPA and department criteria.</li>
+              <li>Optimized SQL queries, indexing, and parameterized JDBC statements preventing SQL injection.</li>
+              <li>Clean semantic HTML5 structure with responsive tables and data forms.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>JDBC</span>
+            <span>MySQL</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+          </div>
+          <div class="project-footer">
+            <span class="interview-note">💡 Key Interview Topic: SQL Injection prevention, Indexing</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Achievements Section -->
+  <section class="section edu-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title">Education &amp; Credentials</h2>
+        <p class="section-desc">Academic milestone and continuous learning journey in Computer Science.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2025 - 2029 (Expected)</div>
+            <h3 class="timeline-title">Bachelor of Technology (B.Tech) - Computer Science &amp; Engineering</h3>
+            <p class="timeline-institution">Engineering University / College</p>
+            <p class="timeline-text">
+              Focused on Core CS subjects including Object-Oriented Programming with Java, Data Structures &amp; Algorithms, 
+              Database Management Systems, Software Engineering, and Operating Systems.
+            </p>
+            <div class="timeline-tags">
+              <span>B.Tech CSE</span>
+              <span>Java Specialization</span>
+              <span>Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Continuous Learning &amp; Certification</div>
+            <h3 class="timeline-title">Full Stack Java Development &amp; Modern Web Standards</h3>
+            <p class="timeline-institution">Self-Directed Learning &amp; Online Coursework</p>
+            <p class="timeline-text">
+              Comprehensive deep-dive into Spring Boot, REST APIs, Microservices basics, and semantic, accessible frontend design with HTML5, CSS3, and JavaScript.
+            </p>
+            <div class="timeline-tags">
+              <span>Spring Boot</span>
+              <span>REST APIs</span>
+              <span>CSS3 Flexbox/Grid</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Interview Live Terminal Demo Section -->
+  <section class="section demo-section" id="live-demo">
+    <div class="container">
+      <div class="demo-box">
+        <div class="demo-text">
+          <span class="section-tag">Interactive Feature</span>
+          <h2 class="demo-title">Test The Java Backend Live In Your Browser</h2>
+          <p class="demo-subtitle">
+            When you launch <code>PortfolioServer.java</code>, this frontend communicates directly with the Java REST API. 
+            Click the buttons below to test live JSON endpoints!
+          </p>
+          <div class="demo-buttons">
+            <button class="btn btn-primary" onclick="queryApi('/api/status')">Ping /api/status</button>
+            <button class="btn btn-secondary" onclick="queryApi('/api/profile')">Fetch /api/profile</button>
+            <button class="btn btn-outline" onclick="queryApi('/api/projects')">Fetch /api/projects</button>
+          </div>
+        </div>
+        <div class="demo-output-card">
+          <div class="output-header">
+            <span>Terminal / API Response Window</span>
+            <button class="clear-btn" onclick="clearOutput()">Clear</button>
+          </div>
+          <pre id="apiOutput"><code>// Click an API button on the left to see live Java HTTP responses!
+// Or launch 'PortfolioServer.java' and test from terminal.</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Connect</span>
+        <h2 class="section-title">Let's Discuss Opportunities</h2>
+        <p class="section-desc">I am actively preparing for interviews, internships, and full-time software developer roles.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>
+            Whether you have an upcoming interview opportunity, a question about my projects, or want to collaborate on Java and web development, feel free to reach out!
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-val" id="emailVal">ansul.dev@example.com</span>
+                <button class="copy-btn" onclick="copyEmail()" title="Copy email address">Copy</button>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-val">India (Open to Relocation &amp; Remote)</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">💼</div>
+              <div>
+                <span class="info-label">Looking For</span>
+                <span class="info-val">Software Engineer / Full Stack Java Developer</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">🔗</div>
+              <div>
+                <span class="info-label">Social &amp; Profiles</span>
+                <div class="social-links">
+                  <a href="https://github.com" target="_blank" rel="noopener" class="social-badge">GitHub</a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-badge">LinkedIn</a>
+                  <a href="https://leetcode.com" target="_blank" rel="noopener" class="social-badge">LeetCode</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form (Submits to Java Backend or simulates locally) -->
+        <div class="contact-form-card">
+          <h3>Send a Direct Message</h3>
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="e.g. Recruiter / Interviewer Name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required placeholder="name@company.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="Full Stack Java Developer Interview / Role" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Hi Ansul, we'd like to schedule an interview with you..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+
+            <div id="formFeedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-code">&lt;</span>Ansul<span class="logo-slash">/</span><span class="logo-code">&gt;</span>
+        </a>
+        <p>Built with clean HTML5, CSS3, JavaScript, and an embedded Java 21 Backend Server.</p>
+      </div>
+      <div class="footer-right">
+        <p>&copy; <span id="currentYear"></span> Ansul. Designed for Technical Interviews &amp; Placement Excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
+
